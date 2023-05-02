@@ -1,9 +1,7 @@
-const { environment } = require('@rails/webpacker');
-const webpack = require('webpack');
+const { environment } = require('@rails/webpacker')
 
-// Add this line if it doesn't exist
-environment.plugins.prepend('Provide', new webpack.ProvidePlugin({
-  React: 'react',
-}));
+const babelLoader = environment.loaders.get('babel')
+babelLoader.test = /\.(js|jsx)$/i
+babelLoader.exclude = /node_modules/
 
-module.exports = environment;
+module.exports = environment
