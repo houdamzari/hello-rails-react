@@ -51,4 +51,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  database: testdb
+  username: postgres
+  password: <%= ENV['1234'] %>
+  port: 5432
