@@ -1,0 +1,39 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "./app/javascript/packs/application",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houdamzari/hello-rails-react.git"
+  },
+  "babel": {
+    "presets": [
+    "@babel/preset-react"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/houdamzari/hello-rails-react/issues"
+  },
+  "homepage": "https://github.com/houdamzari/hello-rails-react#readme",
+  "dependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.2"
+  }
+}
